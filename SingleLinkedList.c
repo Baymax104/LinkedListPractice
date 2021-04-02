@@ -121,6 +121,32 @@ void emptyListS(SNode *head) {
         printf("删除失败!\n");
     }
 }
+void reverse(SNode *head, int n) {
+    SNode *p = head->next;
+    int numberOfNode = 0;
+    while (p) {
+        numberOfNode++;
+        p = p->next;
+    }
+    if (n > numberOfNode) {
+        puts("个数超过节点个数!");
+        return;
+    }
+    int count = 1;
+    SNode *new = head->next; // 逆转后链表的头结点指针
+    SNode *old = new->next; // 未逆转的链表的头结点指针
+    SNode *temp;
+    while (count < n) {
+        temp = old->next;
+        old->next = new;
+        new = old;
+        old = temp;
+        count++;
+    }
+    head->next->next = old;
+    head->next = new;
+    printListS(head);
+}
 void printListS(SNode *head) {
     while (head->next) {
         head = head->next;
@@ -130,6 +156,7 @@ void printListS(SNode *head) {
 }
 void projectSingle(SNode *head) {
     int op;
+    int n;
     do {
         puts("1)打印单链表");
         puts("2)添加节点");
@@ -137,8 +164,9 @@ void projectSingle(SNode *head) {
         puts("4)修改节点");
         puts("5)查找指定位置的数据");
         puts("6)查找指定数据的位置");
-        puts("7)删除表");
-        puts("8)退出");
+        puts("7)逆转链表");
+        puts("8)删除表");
+        puts("9)退出");
         printf("请输入你的选择:\n");
         scanf("%d", &op);
         switch (op) {
@@ -162,9 +190,14 @@ void projectSingle(SNode *head) {
                 findPositionS(head);
                 break;
             case 7:
-                emptyListS(head);
+                printf("请输入逆转个数:\n");
+                scanf("%d", &n);
+                reverse(head, n);
                 break;
             case 8:
+                emptyListS(head);
+                break;
+            case 9:
                 printf("Goodbye\n");
                 return;
             default:

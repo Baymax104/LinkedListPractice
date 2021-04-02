@@ -4,27 +4,27 @@
 	<Project>
 		<Option title="LinkList"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="msvc8"/>
+		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/Projects/Clion2020.3/LinkList/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="D:/Projects/Clion2020.3/LinkList/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LinkList">
@@ -32,22 +32,17 @@
 				<Option working_dir="D:/Projects/Clion2020.3/LinkList/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:\DevelopTool\VisualStudio2019\VC\Tools\MSVC\14.28.29910\ATLMFC\include"/>
-					<Add directory="D:\DevelopTool\VisualStudio2019\VC\Tools\MSVC\14.28.29910\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
-					<Add directory="D:\Windows Kits\10\include\10.0.18362.0\ucrt"/>
-					<Add directory="D:\Windows Kits\10\include\10.0.18362.0\shared"/>
-					<Add directory="D:\Windows Kits\10\include\10.0.18362.0\um"/>
-					<Add directory="D:\Windows Kits\10\include\10.0.18362.0\winrt"/>
-					<Add directory="D:\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+					<Add directory="d:\developtool\clion\mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="d:\developtool\clion\mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="d:\developtool\clion\mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 LinkList"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 LinkList"/>
+					<CompileFile command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LinkList/fast">
@@ -55,32 +50,27 @@
 				<Option working_dir="D:/Projects/Clion2020.3/LinkList/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:\DevelopTool\VisualStudio2019\VC\Tools\MSVC\14.28.29910\ATLMFC\include"/>
-					<Add directory="D:\DevelopTool\VisualStudio2019\VC\Tools\MSVC\14.28.29910\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
-					<Add directory="D:\Windows Kits\10\include\10.0.18362.0\ucrt"/>
-					<Add directory="D:\Windows Kits\10\include\10.0.18362.0\shared"/>
-					<Add directory="D:\Windows Kits\10\include\10.0.18362.0\um"/>
-					<Add directory="D:\Windows Kits\10\include\10.0.18362.0\winrt"/>
-					<Add directory="D:\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+					<Add directory="d:\developtool\clion\mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="d:\developtool\clion\mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="d:\developtool\clion\mingw\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 LinkList/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 LinkList/fast"/>
+					<CompileFile command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="D:/Projects/Clion2020.3/LinkList/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\Clion2020.3\LinkList\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/DevelopTool/Clion/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/Projects/Clion2020.3/LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>

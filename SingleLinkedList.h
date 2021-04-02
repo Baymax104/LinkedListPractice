@@ -24,5 +24,6 @@ void findPositionS(SNode *head);
 void emptyListS(SNode *head);
 void printListS(SNode *head);
 void projectSingle(SNode *head);
+void reverse(SNode *head, int n);
 
 #endif //LINKLIST_SINGLELINKEDLIST_H
